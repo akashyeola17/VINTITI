@@ -83,5 +83,3 @@ function closeSearchOverlay() {
     searchOverlay.classList.remove('active');
     searchInput.value = '';
 }
-
-
