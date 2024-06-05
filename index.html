@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: "Lato",sans-serif;
+            transition: background-color .5s;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776; open</span>
+    </div>
+
+    <div id="mySideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://www.myntra.com/oversized-tshirts-men">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <video src="./images/mov_bbb.mp4" width="100%
+    "></video>
+    <video src="./images/mov_bbb.mp4" width="100%"></video>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySideNav").style.width = "500px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySideNav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+</html>
