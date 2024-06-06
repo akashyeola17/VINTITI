@@ -280,21 +280,6 @@ body{
     opacity: 0;
 }
 
-/* .change {
-    background-color: rgb(119, 21, 21);
-    height: 100vh;
-    margin: 0;
-    position: absolute;
-    font-size: 15px;
-    top: 0;
-    z-index: -100;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
 .change {
     display: block;
     background-color:#151515;
@@ -386,28 +371,45 @@ body{
     display: flex;
     
 }
+
 #search-input {
     width: 50%;
     padding: 15px;
-    font-size: 10px;
-    border: none;
-    border-radius: 5px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    border: 1px solid black;
+    background: #FEFAF6;
+    border-radius: 250em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-top: -600px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* outline:2px solid #FFD700 ; */
     outline: none;
 }
 
 .closebtn {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M19.5 4.5L4.5 19.5M19.5 19.5L4.5 4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 25px; /* Set width to match your image */
+    height: 40px; /* Set height to match your image */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: none; /* Remove outline */
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 6%;
+    right: 300px;
     font-size: 30px;
     border: none;
     cursor: pointer;
 }
 
 
-
+.closebtn:hover {
+    opacity: 0.8; /* Optional: Add hover effect */
+}
 
 /* CSS FOR PROFILE ICON */
 .profile {
