@@ -83,3 +83,29 @@ function closeSearchOverlay() {
     searchOverlay.classList.remove('active');
     searchInput.value = '';
 }
+
+
+// The above code is for the login and signup side nav
+
+function openLogin() {
+    document.getElementById("sideLoginNav").style.width = "400px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeLogin() {
+    document.getElementById("sideLoginNav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+function toggleForm(formId) {
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+
+    if (formId === 'signupForm') {
+        loginForm.style.display = "none";
+        signupForm.style.display = "block";
+    } else {
+        signupForm.style.display = "none";
+        loginForm.style.display = "block";
+    }
+}
